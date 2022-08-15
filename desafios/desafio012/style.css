@@ -14,34 +14,22 @@ header h1 {
     font-family: 'Passion One', cursive;
     padding-top: 30px;
     margin-bottom: 5px;
-    
     text-shadow: 2px 2px 0px rgba(182, 169, 169, 0.178);
-
 }
 
 header p {
+    color: white;
     font-family: 'Passion One', cursive;
     padding-bottom: 20px;
     margin-top: 5px;
 }
 
+a:hover {
+    color: rgb(219, 201, 201);
+    text-decoration: none;
+}
+
 main {
     background-color: white;
     font-family: 'Sriracha', cursive;
-
 }
-
-div#q1 {
-   margin: 100px 100px;
-}
-
-div#q2 {
-    margin: 100px 100px;
-    background-image: url(imagens/background001.jpg);
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
- }
-
- div#q3 {
-    margin: 100px 100px;
- }
