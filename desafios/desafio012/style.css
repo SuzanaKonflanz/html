@@ -10,6 +10,7 @@
 }
 
 html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
     background-color: rgb(13, 47, 77);
 }
@@ -24,6 +25,7 @@ header h1 {
     font-family: 'Passion One', cursive;
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header p {
@@ -45,6 +47,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: 'Sriracha', cursive;
+    font-size: 3vw;
 }
 
 section.normal {
@@ -54,11 +58,13 @@ section.normal {
 
 section.imagem {
     color: white;
+    background-image: url(imagens/background002.jpg);
 }
 
 section.imagem > p {
-    width: 400px;
     background-color: rgba(0, 0, 0, 0.349);
+    display: inline-block;
+    padding: 5px;
 }
 
 footer {
