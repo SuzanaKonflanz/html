@@ -13,7 +13,8 @@
 
         table {
             border-collapse: collapse;
-            width: 500px;
+            width: 400px;
+            position: relative;
         }
 
         th, td {
@@ -23,11 +24,28 @@
         }
 
         thead, tfoot {
-            background-color: rgba(128, 128, 128, 0.459);
+            background-color: rgba(128, 128, 128, 0.842);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgba(128, 128, 128, 0.842);
         }
 
         .num {
             text-align: right;
+        }
+
+        caption {
+            background-color: grey;
+            padding: 8px;
+            border: 1px solid black;
+            font-size: 1.5em;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(128, 128, 128, 0.466);
         }
 
     </style>
@@ -35,10 +53,11 @@
 <body>
 <h1>Tabelas grandes</h1>
 <table>
+    <caption><strong>População dos Estados Brasileiros</strong></caption>
     <thead>
     <tr>
-        <th>Unidade Federativa</th>
-        <th>População</th>
+        <th scope="col">Unidade Federativa</th>
+        <th scope="col" style="width: 100px;">População</th>
     </tr>
 
     </thead>
@@ -76,11 +95,75 @@
         <td>Ceará</td>
         <td class="num">9 240 580</td>
     </tr>
+    <tr>
+        <td>São Paulo</td>
+        <td class="num">46 649 132</td>
+    </tr>
+    <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 411 923</td>
+    </tr>
+    <tr>
+        <td>Rio de Janeiro</td>
+        <td class="num">17 463 349</td>
+    </tr>
+    <tr>
+        <td>Bahia</td>
+        <td class="num">14 985 284</td>
+    </tr>
+    <tr>
+        <td>Paraná</td>
+        <td class="num">11 597 484</td>
+    </tr>
+    <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="num">11 466 630</td>
+    </tr>
+    <tr>
+        <td>Pernambuco</td>
+        <td class="num">9 674 793</td>
+    </tr>
+    <tr>
+        <td>Ceará</td>
+        <td class="num">9 240 580</td>
+    </tr>
+    <tr>
+        <td>São Paulo</td>
+        <td class="num">46 649 132</td>
+    </tr>
+    <tr>
+        <td>Minas Gerais</td>
+        <td class="num">21 411 923</td>
+    </tr>
+    <tr>
+        <td>Rio de Janeiro</td>
+        <td class="num">17 463 349</td>
+    </tr>
+    <tr>
+        <td>Bahia</td>
+        <td class="num">14 985 284</td>
+    </tr>
+    <tr>
+        <td>Paraná</td>
+        <td class="num">11 597 484</td>
+    </tr>
+    <tr>
+        <td>Rio Grande do Sul</td>
+        <td class="num">11 466 630</td>
+    </tr>
+    <tr>
+        <td>Pernambuco</td>
+        <td class="num">9 674 793</td>
+    </tr>
+    <tr>
+        <td>Ceará</td>
+        <td class="num">9 240 580</td>
+    </tr>
     </tbody>
 
     <tfoot>
     <tr>
-        <th>Total de habitantes</th>
+        <th scope="row">Total de habitantes</th>
         <td class="num"><strong>33348</strong></td>
 
     </tr>
